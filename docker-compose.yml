@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build:
+      context: .
+    container_name: streamlit-container
+    ports:
+      - "8501:8501"  # แมปพอร์ต
+    env_file:
+      - .env         # โหลดตัวแปรจากไฟล์ .env
+    restart: unless-stopped  # รีสตาร์ทอัตโนมัติเมื่อเซิร์ฟเวอร์เริ่มใหม่
