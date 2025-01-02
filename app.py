@@ -15,7 +15,7 @@ st.title("Block IP Address")
 # ฟอร์มสำหรับกรอก IP และ PIN
 with st.form(key="ip_form"):
     ip_address = st.text_input("กรอก IP Address ที่ต้องการบล็อก")  # กรอก IP ก่อน
-    pin = st.text_input("กรุณาใส่ PIN 6 หลัก", type="password", max_chars=6)  # กรอก PIN หลัง
+    pin = st.text_input("กรุณาใส่ PIN", type="password", max_chars=11)  # กรอก PIN หลัง
     submit_button = st.form_submit_button("เพิ่ม IP")
 
 # ตรวจสอบเมื่อผู้ใช้กดปุ่มเพิ่ม IP
