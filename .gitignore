@@ -3,3 +3,4 @@ ip.txt
 .idea
 .venv
 .git
+.gitignore
