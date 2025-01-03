@@ -3,7 +3,7 @@ version: "3.8"
 services:
   nginx:
     image: nginx:latest
-    container_name: static-nginx
+    container_name: streamlit-nginx
     ports:
       - "8502:8502"
     volumes:
