@@ -6,7 +6,9 @@ services:
       context: .
     container_name: streamlit-container
     ports:
-      - "8501:8501"  # แมปพอร์ต
+      - "8501:8501"  # แมปพอร์ต Streamlit
+    volumes:
+      - ./static:/app/static  # แชร์โฟลเดอร์ static ให้ตรงกับที่โค้ดใช้
     env_file:
-      - .env         # โหลดตัวแปรจากไฟล์ .env
+      - .env  # โหลดตัวแปรจากไฟล์ .env
     restart: unless-stopped  # รีสตาร์ทอัตโนมัติเมื่อเซิร์ฟเวอร์เริ่มใหม่
