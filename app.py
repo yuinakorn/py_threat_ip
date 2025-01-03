@@ -78,7 +78,7 @@ with tab1:
     nginx_ip = config_env["NGINX_IP"]
     st.markdown(
         """
-        <a href="http://""" + nginx_ip + """:8502/static/ip.txt" target="_blank">
+        <a href=\"""" + nginx_ip + """/static/ip.txt" target="_blank">
             <button style="background-color:green; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">
                 แสดง IP ในแท็บใหม่
             </button>
