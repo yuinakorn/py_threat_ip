@@ -32,7 +32,7 @@ docker compose up -d
 
 ในโปรเจคนี้มี docker 2 ตัว คือ 1.Streamlit และ 2.Nginx 
 
-ภาพตัวอย่าง
+### ภาพตัวอย่าง
 
 ![image](pic01.png)
 
