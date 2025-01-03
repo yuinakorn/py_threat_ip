@@ -36,3 +36,7 @@ docker compose up -d
 
 ![image](pic01.png)
 
+การนำไปใส่ใน External Connector ใน Firewall
+
+![image](pic02.png)
+
