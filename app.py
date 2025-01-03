@@ -1,5 +1,5 @@
 import streamlit as st
-from dotenv import load_dotenv
+from dotenv import load_dotenv, dotenv_values
 import os
 import ipaddress
 
@@ -7,7 +7,9 @@ import ipaddress
 load_dotenv()
 
 # อ่านค่า CORRECT_PIN จาก .env
-CORRECT_PIN = os.getenv("CORRECT_PIN")
+config_env = dotenv_values(".env")
+CORRECT_PIN = config_env["CORRECT_PIN"]
+
 if not CORRECT_PIN:
     st.error("CORRECT_PIN ยังไม่ได้ตั้งค่าใน Environment Variable!")
     st.stop()
