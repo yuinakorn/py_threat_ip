@@ -1,11 +1,9 @@
-version: "3.8"
-
 services:
   nginx:
     image: nginx:latest
     container_name: streamlit-nginx
     ports:
-      - "8502:8502"
+      - "8502:80"
     volumes:
-      # - ./:/usr/share/nginx/html/static # แชร์โฟลเดอร์ static ให้ NGINX
+      - ./:/usr/share/nginx/html/static:ro # แชร์โฟลเดอร์ static ให้ NGINX
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro # ใช้คอนฟิก nginx.conf
