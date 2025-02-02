@@ -270,6 +270,3 @@ with tab_domain:
         except FileNotFoundError:
             st.info("ยังไม่มีไฟล์ Domain")
 
-#
-# with tab_virus:
-#     st.header("Anti-virus")
