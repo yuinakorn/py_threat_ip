@@ -1,5 +1,6 @@
 .env
 ip.txt
+domain.txt
 .idea
 .venv
 .git
